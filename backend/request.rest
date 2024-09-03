@@ -1,0 +1,76 @@
+PATCH   http://localhost:3000/roleusers/105
+Content-Type:  application/json
+
+
+####
+POST http://localhost:3000/login
+Content-Type:  application/json
+
+{
+    "email":"suandikanapitupulu08@gmail.com",
+    "password":"12345678"
+}
+
+
+###
+GET  http://localhost:3000/products/images/1716743832852-Halaman Guest (7).png
+
+
+####
+GET  http://localhost:3000/Me
+
+###
+http://localhost:3000/users
+
+####
+Get http://localhost:3000/cart/user
+
+###
+POST   http://localhost:3000/cart
+Content-Type:  application/json
+
+{
+   "size":"S",
+   "quantity":"1",
+   "totalprice":"2",
+   "userId":"114",
+   "productId":"27"
+
+}
+###
+PATCH http://localhost:3000/updateCart
+Content-Type: application/json
+
+{
+  "items": [
+    {
+      "id": 22,
+      "size": "XL",
+      "subtotal":3,
+      "quantity": 2,
+      "userId": 114,
+      "productId": 27
+    },
+    {
+      "id": 23,
+      "size": "XXL",
+      "subtotal":3,
+      "quantity": 1,
+      "userId": 114,
+      "productId": 27
+    }
+  ]
+}
+###
+
+POST   http://localhost:3000//checkouts
+Content-Type:  application/json
+
+{
+   "size":"S",
+   "quantity":"1",
+   "totalprice":"2",
+   "userId":"114",
+   "productId":"27"
+
+}

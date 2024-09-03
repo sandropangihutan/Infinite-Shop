@@ -1,0 +1,19 @@
+.dashboard-content {
+    width: calc(100% - 275px);
+    margin-left: 275px;
+}
+
+.dashboard-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-content::after {
+    content: "";
+    display: block;
+    clear: both;
+    background-color: #E5E7EB;
+    height: 50px;
+}

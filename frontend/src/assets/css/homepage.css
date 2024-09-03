@@ -1,0 +1,71 @@
+.hover-animation {
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.hover-animation:hover {
+    transform: scale(1.1);
+    /* Ubah ukuran teks saat dihover */
+    text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.7);
+    /* Ubah bayangan teks saat dihover */
+}
+
+.homepage-content{
+  content: "";
+  display: block;
+  clear: both;
+  height: 2000px; 
+}
+
+/* In homepage.css or any relevant CSS file */
+/* In homepage.css or any relevant CSS file */
+
+.nav-container {
+  position: relative;
+  width: 1039px;
+  height: 64px; /* Adjust height as needed */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-button {
+  text-align: center;
+  color: #8A3DFF;
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  padding: 8px 20px; /* Adjust padding as needed */
+  flex: 1; /* Allow the buttons to take up equal space */
+  z-index: 1; /* Make sure the text is above the pseudo-element */
+  border-radius: 30px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for background-color */
+}
+
+.nav-button.active {
+  background-color: #8A3DFF; /* Adjusted color */
+  color: white; /* Adjust text color to stand out against the violet background */
+}
+
+/* animations.css */
+.slide-enter {
+  opacity: 0;
+  transform: translateX(30%);
+}
+.slide-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms, transform 500ms ease;
+}
+.slide-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.slide-exit-active {
+  opacity: 0;
+  transform: translateX(-70%);
+  transition: opacity 500ms, transform 500ms ease;
+}
+
+
+
+

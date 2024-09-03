@@ -1,0 +1,184 @@
+.navbar-container {
+    width: 1320px;
+    height: 60px;
+    padding: 40px;
+    padding-left: 70px;
+    background-color: white;
+    border: 1px solid #8A3DFF;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    /* Mengatur posisi horizontal ke tengah */
+    align-items: center;
+    /* Mengatur posisi vertikal ke tengah */
+    margin: 0 auto;
+    /* Membuat elemen menjadi berada di tengah */
+    position: absolute;
+    top: 30px;
+    /* Sesuaikan dengan kebutuhan */
+    left: 0;
+    right: 0;
+}
+
+.animate-color-change {
+    background: radial-gradient(#8A3DFF, #E8A525);
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* Efek bayangan teks untuk meningkatkan kontras */
+    transition: color 0.3s ease;
+    /* Animasi perubahan warna selama 0.3 detik dengan efek easing */
+}
+
+.animate-color-change:hover {
+    color: #8A3DFF;
+    /* Ubah warna teks menjadi putih saat kursor berada di atasnya */
+}
+
+.flex-container-right {
+    position: relative;
+    right:-200px;
+}
+.flex-container-right .buttons {
+    display: flex;
+    align-items: center;
+}
+
+.flex-container-right .buttons button {
+    margin-right: 3px;
+    /* Menambahkan jarak 50px antara tombol */
+}
+
+/* Atau Anda bisa mengatur jarak dengan menggunakan CSS grid */
+.flex-container-right .buttons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 10px;
+    /* Menambahkan jarak 50px antara tombol */
+}
+.buttons {
+    text-align: center;
+    border-radius: 30px;
+}
+.blob-btn {
+    z-index: 1;
+    position: relative;
+    padding: 9px 46px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #8A3DFF;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.blob-btn:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #8A3DFF;
+    border-radius: 30px;
+}
+
+.blob-btn:after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s 0.2s;
+    border-radius: 30px;
+}
+
+.blob-btn:hover {
+    color: #FFFFFF;
+    border-radius: 30px;
+}
+
+.blob-btn:hover:after {
+    transition: all 0.3s;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+
+.blob-btn__inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: #ffffff;
+}
+
+.blob-btn__blobs {
+    position: relative;
+    display: block;
+    height: 100%;
+    filter: url("#goo");
+}
+
+.blob-btn__blob {
+    position: absolute;
+    top: 2px;
+    width: 25%;
+    height: 100%;
+    background: #8A3DFF;
+    border-radius: 100%;
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    transition: transform 0.45s;
+}
+
+@supports (filter: url("#goo")) {
+    .blob-btn__blob {
+        transform: translate3d(0, 150%, 0) scale(1.4);
+    }
+}
+
+.blob-btn__blob:nth-child(1) {
+    left: 0%;
+    transition-delay: 0s;
+}
+
+.blob-btn__blob:nth-child(2) {
+    left: 30%;
+    transition-delay: 0.08s;
+}
+
+.blob-btn__blob:nth-child(3) {
+    left: 60%;
+    transition-delay: 0.16s;
+}
+
+.blob-btn__blob:nth-child(4) {
+    left: 90%;
+    transition-delay: 0.24s;
+}
+
+.blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.7);
+}
+
+@supports (filter: url("#goo")) {
+    .blob-btn:hover .blob-btn__blob {
+        transform: translateZ(0) scale(1.4);
+    }
+}

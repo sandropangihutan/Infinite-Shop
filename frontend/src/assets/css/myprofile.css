@@ -1,0 +1,198 @@
+.my-profile-container {
+  width: max-content;
+  max-height: max-content;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.profile-header {
+  color: #8b5cf6; /* Violet-600 */
+  margin-top: 1rem; /* 4 */
+  font-size: 1.875rem; /* 3xl */
+  padding-left: 5rem; /* 20 */
+  font-weight: 600; /* font-semibold */
+  font-family: 'Poppins', sans-serif;
+}
+
+.profile-buttons-container {
+  padding-left: 5rem; /* 20 */
+  margin-top: 1rem; /* 4 */
+}
+
+.button-my-profile,
+.button-my-orders,
+.button-log-out {
+  width: 15rem; /* 60 */
+  padding: 0.75rem 1rem; /* px-4 py-3 */
+  border-radius: 10px; /* rounded */
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem; /* gap-4 */
+  border: none; /* Ensure no border */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: white; /* Default background color */
+}
+
+.button-my-profile.active,
+.button-my-orders.active {
+  background-color: #e9d5ff; /* bg-purple-100 */
+}
+
+.button-my-profile .icon-active,
+.button-my-orders .icon-active,
+.button-log-out .icon-active {
+  color: #8b5cf6; /* Violet-600 */
+}
+
+.button-my-profile .icon-inactive,
+.button-my-orders .icon-inactive,
+.button-log-out .icon-inactive {
+  color: #64748b; /* Slate-500 */
+}
+
+.button-my-profile .text-active,
+.button-my-orders .text-active {
+  color: #8b5cf6; /* Violet-600 */
+}
+
+.button-my-profile .text-inactive,
+.button-my-orders .text-inactive {
+  color: #64748b; /* Slate-500 */
+}
+
+.button-log-out {
+  background-color: transparent;
+}
+
+.text-my-profile,
+.text-my-orders,
+.text-log-out {
+  font-size: 1rem; /* text-base */
+  font-weight: 400; /* font-normal */
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-log-out {
+  color: #64748b; /* text-slate-500 */
+}
+
+.line-separator {
+  width: 15rem; /* 60 */
+  border: 1px solid #d1d5db; /* border-neutral-300 */
+  margin: 1rem 0; /* my-4 */
+}
+
+.Frame109 {
+  width: 921px;
+  height: 796px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #6f42c1; /* Adjust border color to match your design */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  margin-top: 10px;
+  left: 400px;
+  bottom: 270px;
+}
+
+.Frame107 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 9px;
+}
+
+.Group219 {
+  width: 104px;
+  height: 100px;
+  position: relative;
+}
+
+.Ellipse10 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #e9d5ff; /* Adjust background color to match your design */
+  border-radius: 50%;
+}
+
+.Group204 {
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 76px;
+  top: 60px;
+}
+
+.Ellipse11 {
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #6f42c1; /* Adjust background color to match your design */
+  border-radius: 50%;
+}
+
+.BasilEditOutline {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+
+.NameFont {
+  color: #333; /* Adjust text color to match your design */
+  font-size: 24px; /* Adjust font size to match your design */
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif; /* Adjust font family to match your design */
+}
+
+.Frame106 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.Frame101,
+.Frame102,
+.Frame103 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px; /* Adjust gap as needed */
+}
+
+
+.text-gray-800,
+.email-text,
+.text-my-profile,
+.text-my-orders,
+.text-log-out {
+  color: #1f2937; /* Mengatur warna teks menjadi abu-abu */
+  font-size: 1rem; /* Mengatur ukuran teks menjadi 16px (default ukuran base di banyak browser) */
+  font-weight: 400; /* Mengatur ketebalan teks menjadi normal */
+  font-family: 'Poppins', sans-serif; /* Mengatur font family menjadi 'Poppins' */
+  line-height: 1.5; /* Mengatur tinggi baris untuk menjaga keterbacaan */
+  margin: 0; /* Menghapus margin default */
+  padding: 0; /* Menghapus padding default */
+}
+
+.custom-input {
+  color: #1f2937; /* Warna teks abu-abu */
+  font-family: 'Poppins', sans-serif; /* Jenis font */
+  font-size: 1rem; /* Ukuran teks */
+  padding: 0.5rem; /* Padding dalam input */
+}
+

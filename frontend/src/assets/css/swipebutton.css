@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+.swipe1 {
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+    border: 2px #009cdf solid;
+    width: 409px;
+    /* Lebar tombol */
+    height: 41px;
+    /* Tinggi tombol */
+    border-radius: 10px;
+    /* Sudut bulat */
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: #FFCD29;
+    outline: 0;
+    transition: all .35s ease-in-out;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .2);
+}
+
+.swipe1:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .3);
+    transform: translateY(4px);
+}
+
+.swipe1 .text {
+    color: #4C228C;
+    font-size: small;
+    transition: all .75s ease-in-out;
+    font-weight: bold;
+}
+
+.swipe1:hover .text {
+    color: rgb(255, 255, 255);
+    font-size: small;
+    font-weight: bold;
+}
+
+.swipe1::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -1px;
+    left: -1px;
+    width: 100%;
+    background: #8A3DFF;
+    transition: all .35s ease-in-out;
+    z-index: 0;
+    height: 0;
+    transform: translateY(-100%);
+    border: 2px transparent solid;
+    z-index: -1;
+}
+
+.swipe1:hover::before {
+    transform: translateY(0);
+    height: 100%;
+}
+
+.up::before {
+    top: 100%;
+    transform: translateY(100%);
+}
+
+.up:hover {
+    transform: translateY(-4px);
+}
+
+.up:hover::before {
+    height: 100%;
+    top: 0;
+}

@@ -1,0 +1,180 @@
+.my-order-container {
+    width: max-content;
+    max-height: max-content;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.order-header {
+    color: #8b5cf6;
+    /* Violet-600 */
+    margin-top: 1rem;
+    /* 4 */
+    font-size: 1.875rem;
+    /* 3xl */
+    padding-left: 5rem;
+    /* 20 */
+    font-weight: 600;
+    /* font-semibold */
+    font-family: 'Poppins', sans-serif;
+}
+
+.order-buttons-container {
+    padding-left: 5rem;
+    /* 20 */
+    margin-top: 1rem;
+    /* 4 */
+}
+
+.button-my-profile,
+.button-my-orders,
+.button-log-out {
+    width: 15rem;
+    /* 60 */
+    padding: 0.75rem 1rem;
+    /* px-4 py-3 */
+    border-radius: 10px;
+    /* rounded */
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    /* gap-4 */
+    border: none;
+    /* Ensure no border */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: white;
+    /* Default background color */
+}
+
+.button-my-profile.active,
+.button-my-orders.active {
+    background-color: #e9d5ff;
+    /* bg-purple-100 */
+}
+
+.button-my-profile .icon-active,
+.button-my-orders .icon-active,
+.button-log-out .icon-active {
+    color: #8b5cf6;
+    /* Violet-600 */
+}
+
+.button-my-profile .icon-inactive,
+.button-my-orders .icon-inactive,
+.button-log-out .icon-inactive {
+    color: #64748b;
+    /* Slate-500 */
+}
+
+.button-my-profile .text-active,
+.button-my-orders .text-active {
+    color: #8b5cf6;
+    /* Violet-600 */
+}
+
+.button-my-profile .text-inactive,
+.button-my-orders .text-inactive {
+    color: #64748b;
+    /* Slate-500 */
+}
+
+.button-log-out {
+    background-color: transparent;
+}
+
+.text-my-profile,
+.text-my-orders,
+.text-log-out {
+    font-size: 1rem;
+    /* text-base */
+    font-weight: 400;
+    /* font-normal */
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-log-out {
+    color: #64748b;
+    /* text-slate-500 */
+}
+
+.line-separator {
+    width: 15rem;
+    /* 60 */
+    border: 1px solid #d1d5db;
+    /* border-neutral-300 */
+    margin: 1rem 0;
+    /* my-4 */
+}
+
+.OrderStatus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 927px;
+    gap: 20px;
+    position: relative;
+    left: 400px;
+    bottom: 243px;
+}
+
+.BarOrderStatus {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    gap: 10px;
+}
+
+.Frame10057,
+.Frame10058,
+.Frame10059 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.Frame10057 {
+    background-color: #ffc107;
+}
+
+.Frame10058,
+.Frame10059 {
+    border: 1px solid #dcdcdc;
+}
+
+.Frame10053 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    gap: 20px;
+}
+
+.Bingung {
+    width: 200px;
+    height: 200px;
+}
+
+.NoOrderYet {
+    font-size: 1.25rem;
+    text-align: center;
+    color: #555;
+}
+
+.Footer {
+    margin-top: auto;
+    padding: 10px 0; /* Sesuaikan nilai ini sesuai kebutuhan */
+    background-color: #f8f9fa; /* Sesuaikan warna latar belakang jika diperlukan */
+    text-align: center;
+  }

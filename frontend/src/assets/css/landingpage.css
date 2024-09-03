@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* CSS untuk animasi hover */
+.hover-animation {
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.hover-animation:hover {
+    transform: scale(1.2);
+    /* Ubah ukuran teks saat dihover */
+    text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.7);
+    /* Ubah bayangan teks saat dihover */
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 3em;
+    }
+
+    .subtitle {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 4em;
+    }
+
+    .subtitle {
+        font-size: 3em;
+    }
+}
+
+.landing-page {
+    width: 100%;
+    display: flex;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    left: 0;
+    background-color: #8A3DFF;
+
+}

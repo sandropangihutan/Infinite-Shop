@@ -1,0 +1,19 @@
+.user-content {
+  margin-left: 275px;
+}
+
+.user-container {
+  width: 100%;
+  max-width: 100%;
+  height: 1060px;
+  margin: 0;
+  padding: 0;
+}
+
+.user-content::after {
+  content: "";
+  display: block;
+  clear: both;
+  background-color: #e5e7eb;
+  height: 1060px;
+}

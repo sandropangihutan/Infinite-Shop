@@ -1,0 +1,367 @@
+.my-order-container {
+    width: max-content;
+    max-height: max-content;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.order-header {
+    color: #8b5cf6;
+    /* Violet-600 */
+    margin-top: 1rem;
+    /* 4 */
+    font-size: 1.875rem;
+    /* 3xl */
+    padding-left: 5rem;
+    /* 20 */
+    font-weight: 600;
+    /* font-semibold */
+    font-family: 'Poppins', sans-serif;
+}
+
+.order-buttons-container {
+    padding-left: 5rem;
+    /* 20 */
+    margin-top: 1rem;
+    /* 4 */
+}
+
+.button-my-profile,
+.button-my-orders,
+.button-log-out {
+    width: 15rem;
+    /* 60 */
+    padding: 0.75rem 1rem;
+    /* px-4 py-3 */
+    border-radius: 10px;
+    /* rounded */
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    /* gap-4 */
+    border: none;
+    /* Ensure no border */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: white;
+    /* Default background color */
+}
+
+.button-my-profile.active,
+.button-my-orders.active {
+    background-color: #e9d5ff;
+    /* bg-purple-100 */
+}
+
+.button-my-profile .icon-active,
+.button-my-orders .icon-active,
+.button-log-out .icon-active {
+    color: #8b5cf6;
+    /* Violet-600 */
+}
+
+.button-my-profile .icon-inactive,
+.button-my-orders .icon-inactive,
+.button-log-out .icon-inactive {
+    color: #64748b;
+    /* Slate-500 */
+}
+
+.button-my-profile .text-active,
+.button-my-orders .text-active {
+    color: #8b5cf6;
+    /* Violet-600 */
+}
+
+.button-my-profile .text-inactive,
+.button-my-orders .text-inactive {
+    color: #64748b;
+    /* Slate-500 */
+}
+
+.button-log-out {
+    background-color: transparent;
+}
+
+.text-my-profile,
+.text-my-orders,
+.text-log-out {
+    font-size: 1rem;
+    /* text-base */
+    font-weight: 400;
+    /* font-normal */
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-log-out {
+    color: #64748b;
+    /* text-slate-500 */
+}
+
+.line-separator {
+    width: 15rem;
+    /* 60 */
+    border: 1px solid #d1d5db;
+    /* border-neutral-300 */
+    margin: 1rem 0;
+    /* my-4 */
+}
+
+.OrderStatus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 927px;
+    gap: 20px;
+    position: relative;
+    left: 400px;
+    bottom: 243px;
+}
+
+.BarOrderStatus {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    gap: 10px;
+}
+
+.Frame10057,
+.Frame10058,
+.Frame10059 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.Frame10057 {
+    background-color: #ffc107;
+}
+
+.Frame10058,
+.Frame10059 {
+    border: 1px solid #dcdcdc;
+}
+
+.Line50 {
+    color: transparent;
+
+}
+
+
+.Frame10053 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    gap: 20px;
+    bottom: auto;
+}
+
+.full-width-line {
+    width: 100%;
+    border: 8 px solid #d1d5db;
+    /* Menggunakan warna border yang sama */
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.popup-content {
+    border-radius: 10px;
+    width: 90%;
+    max-height: 75%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-right: 20px;
+    max-width: 700px;
+    padding: 20px;
+    background: white;
+    position: relative;
+}
+
+.popup-header {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px 10px 0px 0px;
+    border-color: rgba(184, 191, 202, 1);
+    border-style: solid;
+    border-bottom-width: 1px;
+    background-color: var(--Base-White, #fff);
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    font-size: 18px;
+    color: var(--Neutral---Slate-Gray-900, #2a313a);
+    font-weight: 500;
+    padding: 24px 32px;
+}
+
+.popup-body {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 400px;
+    color: #000;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.product-image {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-rating-stars {
+    display: flex;
+    gap: 5px;
+}
+
+.popup-footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.popup-title {
+    color: black;
+    margin: 0;
+}
+
+.close-button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 80px;
+}
+
+/* Scrollbar for Webkit browsers */
+rating-::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar */
+}
+
+/* Track of the scrollbar */
+rating-::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Handle of the scrollbar */
+rating-::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the handle */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #f1f1f1; /* Padding around the handle */
+}
+
+/* Handle on hover */
+rating-::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the handle on hover */
+}
+
+/* Custom scrollbar for Firefox */
+body {
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Color of the handle and track */
+}
+
+.star {
+    position: relative;
+    display: inline-block;
+}
+
+.star::before {
+    content: '\f005'; /* Unicode karakter untuk bintang */
+    font-family: FontAwesome; /* Nama font dari ikon */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    border: 1px solid #ffc107; /* Warna border emas */
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    ); /* Bentuk bintang */
+    pointer-events: none;
+}
+
+
+.textarea-wrapper {
+    border: 1px solid #e4e5e9; /* Border yang diatur pada div */
+    border-radius: 0.5rem;
+    transition: border-color 0.3s ease; /* Efek transisi untuk border */
+    overflow: hidden; /* Menghapus scrollbar */
+  }
+
+  .textarea-wrapper.focus-within {
+    border-color: transparent; /* Membuat border transparan saat textarea dalam fokus */
+  }
+
+  .textarea-wrapper textarea {
+    width: calc(100% + 1rem); /* Menyesuaikan lebar textarea dengan border yang diatur */
+    height: calc(100% + 1rem); /* Menyesuaikan tinggi textarea dengan border yang diatur */
+    resize: none;
+    border: none; /* Menghapus border bawaan dari textarea */
+    outline: none; /* Menghilangkan outline saat textarea dalam fokus */
+    padding: 0.5rem; /* Menambahkan padding jika diperlukan */
+  }
